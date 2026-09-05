@@ -19,8 +19,8 @@
 # without it Homebrew would report the app as outdated forever and offer to reinstall
 # over a copy that had already updated itself.
 cask "crivo" do
-  version "0.4.2"
-  sha256 "e99fff4a36b8bb4b6bf739968f5f1ced5d57c35de4caaca720863fdfd45deb30"
+  version "0.4.3"
+  sha256 "7c780bfd6ccbb4a8662ba0b2ab1c095f919a603921a3461a1b45a4500f8f899b"
 
   url "https://crivo.hexadexa.io/releases/Crivo-#{version}.dmg"
   name "Crivo"
