@@ -21,7 +21,8 @@ class CrivoCli < Formula
   sha256 "bf9cbcbc541edabac98f1a65b321cf1b1c587ba03bbe9302de0e19646648c9d7"
   license :cannot_represent
 
-  depends_on :macos
+  # macos: implies :macos — having both is disabled, and Homebrew says so at install time
+  # rather than at audit time.
   depends_on macos: :sonoma
 
   def install
