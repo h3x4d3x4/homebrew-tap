@@ -6,7 +6,11 @@
 # which:
 #
 #   brew tap h3x4d3x4/tap
+#   brew trust --cask h3x4d3x4/tap/crivo
 #   brew install --cask crivo
+#
+# The trust step is Homebrew's, not ours: it gates casks from third-party taps now, and
+# without it `install` refuses with "Refusing to load cask from untrusted tap".
 #
 # scripts/make-cask.sh rewrites the version and checksum from the DMG that was just
 # built, so the two cannot drift apart the way a hand-edited checksum does.
@@ -15,8 +19,8 @@
 # without it Homebrew would report the app as outdated forever and offer to reinstall
 # over a copy that had already updated itself.
 cask "crivo" do
-  version "0.2.9"
-  sha256 "68988157b019b282b8db37da9567c1f4670aa80741f7c46ceff2c46a83dd235f"
+  version "0.3.0"
+  sha256 "1b1c7be03aff9886e984b01273b0cd4beb772464af4c03f87ccb0cdfa2266b80"
 
   url "https://crivo.hexadexa.io/releases/Crivo-#{version}.dmg"
   name "Crivo"
