@@ -16,9 +16,9 @@
 class CrivoCli < Formula
   desc "SAF-T (PT) validator for Portuguese accountants, on the command line"
   homepage "https://crivo.hexadexa.io/"
-  url "https://crivo.hexadexa.io/releases/crivo-cli-0.4.4.tar.gz"
-  version "0.4.4"
-  sha256 "d90793c138a6f26f116547d0dd301eae7dc61bff24815e7843a6f5ad274c1114"
+  url "https://crivo.hexadexa.io/releases/crivo-cli-0.5.4.tar.gz"
+  version "0.5.4"
+  sha256 "6b0729d4b7c90b58ae5706872cce5238687c1ef69382a5ac0fe9f08dc2b0b6b4"
   license :cannot_represent
 
   # macos: implies :macos — having both is disabled, and Homebrew says so at install time
