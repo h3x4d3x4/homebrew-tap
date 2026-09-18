@@ -10,8 +10,8 @@
 # auto_updates: the app updates itself through Sparkle, so without this Homebrew would
 # report it outdated forever and offer to reinstall over a copy that already updated.
 cask "lidboot" do
-  version "0.5.0"
-  sha256 "fb4b58d9e738164da3bdbe112c86b83f9604a5c37a25a30f49cfdcee52cf81dc"
+  version "0.5.1"
+  sha256 "53467cb86bf3b6d51b77cb3e34cb7d25aad91ba89df9f008b2b0b251efa0c334"
 
   url "https://github.com/h3x4d3x4/LidBoot/releases/download/v#{version}/LidBoot-#{version}.dmg",
       verified: "github.com/h3x4d3x4/LidBoot/"
