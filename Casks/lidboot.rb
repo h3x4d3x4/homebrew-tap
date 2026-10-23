@@ -13,8 +13,7 @@ cask "lidboot" do
   version "0.5.1"
   sha256 "53467cb86bf3b6d51b77cb3e34cb7d25aad91ba89df9f008b2b0b251efa0c334"
 
-  url "https://github.com/h3x4d3x4/LidBoot/releases/download/v#{version}/LidBoot-#{version}.dmg",
-      verified: "github.com/h3x4d3x4/LidBoot/"
+  url "https://github.com/h3x4d3x4/LidBoot/releases/download/v#{version}/LidBoot-#{version}.dmg"
   name "LidBoot"
   desc "Stop your MacBook starting up when you open the lid or connect power"
   homepage "https://lidboot.hexadexa.io/"
@@ -37,8 +36,8 @@ cask "lidboot" do
   # The firmware setting itself is deliberately NOT touched: zap removes the app's
   # preferences, not a value in NVRAM the user chose. Restore Default in the app does that.
   zap trash: [
-    "~/Library/Preferences/com.lidboot.LidBoot.plist",
     "~/Library/Caches/com.lidboot.LidBoot",
     "~/Library/HTTPStorages/com.lidboot.LidBoot",
+    "~/Library/Preferences/com.lidboot.LidBoot.plist",
   ]
 end
