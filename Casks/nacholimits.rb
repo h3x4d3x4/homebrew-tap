@@ -8,8 +8,8 @@
 # auto_updates: the app updates itself through Sparkle. `binary` links the `nacho` command.
 # Uninstalling doesn't touch Claude Code's settings: Disconnect in the app restores them first.
 cask "nacholimits" do
-  version "0.3.20"
-  sha256 "388f21402a39e4c9c2138aefb1abfedc77add94c99b68a432adb91a91fd4a46e"
+  version "0.4.0"
+  sha256 "64b5059ae97f2fcb192616642c77b48207d44abecffcf290a4f9c693de3a5a08"
 
   url "https://github.com/h3x4d3x4/NachoLimits-releases/releases/download/v#{version}/NachoLimits.dmg"
   name "Nacho Limits"
